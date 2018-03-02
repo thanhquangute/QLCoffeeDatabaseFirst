@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{156F9D3F-08DD-4C98-9C8D-82261B846118}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLCHCF_DatabaseFirst</RootNamespace>
+    <AssemblyName>QLCHCF_DatabaseFirst</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAN.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BussinessChiTietHoaDon.cs" />
+    <Compile Include="BussinessChiTietHopDongCC.cs" />
+    <Compile Include="BussinessChiTietOder.cs" />
+    <Compile Include="BussinessChucVu.cs" />
+    <Compile Include="BussinessHoaDon.cs" />
+    <Compile Include="BussinessLoaiKhachHang.cs" />
+    <Compile Include="BussinessLogin.cs" />
+    <Compile Include="BussinessOder.cs" />
+    <Compile Include="BussinessViTri.cs" />
+    <Compile Include="CHITIETHDCC.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHUCVU.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTHOADON.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CTODER.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CUAHANG.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BussinessCuaHang.cs" />
+    <Compile Include="DaiLyNhanCungCapBussiness.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChiTietHopDongCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietHopDongCungCap.Designer.cs">
+      <DependentUpon>frmChiTietHopDongCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChonBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChonBan.Designer.cs">
+      <DependentUpon>FrmChonBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChonMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChonMon.Designer.cs">
+      <DependentUpon>FrmChonMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCuaHang.Designer.cs">
+      <DependentUpon>FrmCuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDaiLyNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDaiLyNhaCungCap.Designer.cs">
+      <DependentUpon>FrmDaiLyNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHoaDon.Designer.cs">
+      <DependentUpon>FrmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHopDongCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHopDongCC.Designer.cs">
+      <DependentUpon>FrmHopDongCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhachHang.Designer.cs">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOder.Designer.cs">
+      <DependentUpon>FrmOder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuanLyBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuanLyBan.Designer.cs">
+      <DependentUpon>FrmQuanLyBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSanPham.Designer.cs">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTinhDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTinhDoanhThu.Designer.cs">
+      <DependentUpon>FrmTinhDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTinhTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTinhTien.Designer.cs">
+      <DependentUpon>FrmTinhTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HOADON.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HOPDONGCC.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BussinessHopDongCungCap.cs" />
+    <Compile Include="KHACHHANG.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BussinessKhachHang.cs" />
+    <Compile Include="LOAIKH.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NGUYENLIEU.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BussinessNguyenLieu.cs" />
+    <Compile Include="NHACUNGCAP.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NHANVIEN.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ODER.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLCHCFModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCHCFModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLCHCFModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLCHCFModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCHCFModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="BussinessQuanLyBan.cs" />
+    <Compile Include="BussinessQuanLyNhanVien.cs" />
+    <Compile Include="QLCP_BCCK1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCP_BCCK1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCP_BCCK1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCP_BCCK1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCP_BCCK1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCP_BCCK1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCP_BCCK1DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCP_BCCK1DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCP_BCCK1DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCP_BCCK1DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCP_BCCK1DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCP_BCCK1DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SANPHAM.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BussinessSanPham.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VITRI.cs">
+      <DependentUpon>QLCHCFModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietHopDongCungCap.resx">
+      <DependentUpon>frmChiTietHopDongCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChonBan.resx">
+      <DependentUpon>FrmChonBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChonMon.resx">
+      <DependentUpon>FrmChonMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCuaHang.resx">
+      <DependentUpon>FrmCuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDaiLyNhaCungCap.resx">
+      <DependentUpon>FrmDaiLyNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHoaDon.resx">
+      <DependentUpon>FrmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHopDongCC.resx">
+      <DependentUpon>FrmHopDongCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhachHang.resx">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOder.resx">
+      <DependentUpon>FrmOder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuanLyBan.resx">
+      <DependentUpon>FrmQuanLyBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSanPham.resx">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTinhDoanhThu.resx">
+      <DependentUpon>FrmTinhDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTinhTien.resx">
+      <DependentUpon>FrmTinhTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportTinhTien.rdlc" />
+    <EmbeddedResource Include="TinhDoanhThu.rdlc" />
+    <EmbeddedResource Include="TinhTien.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="QLCHCFModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLCHCFModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLCHCFModel.edmx.diagram">
+      <DependentUpon>QLCHCFModel.edmx</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet.xsc">
+      <DependentUpon>QLCP_BCCK1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCP_BCCK1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCP_BCCK1DataSet.xss">
+      <DependentUpon>QLCP_BCCK1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet1.xsc">
+      <DependentUpon>QLCP_BCCK1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCP_BCCK1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCP_BCCK1DataSet1.xss">
+      <DependentUpon>QLCP_BCCK1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet2.xsc">
+      <DependentUpon>QLCP_BCCK1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCP_BCCK1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCP_BCCK1DataSet2.xss">
+      <DependentUpon>QLCP_BCCK1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet3.xsc">
+      <DependentUpon>QLCP_BCCK1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCP_BCCK1DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCP_BCCK1DataSet3.xss">
+      <DependentUpon>QLCP_BCCK1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet4.xsc">
+      <DependentUpon>QLCP_BCCK1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCP_BCCK1DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCP_BCCK1DataSet4.xss">
+      <DependentUpon>QLCP_BCCK1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet5.xsc">
+      <DependentUpon>QLCP_BCCK1DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLCP_BCCK1DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCP_BCCK1DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCP_BCCK1DataSet5.xss">
+      <DependentUpon>QLCP_BCCK1DataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLCHCFModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLCHCFModel.edmx</DependentUpon>
+      <LastGenOutput>QLCHCFModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLCHCFModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLCHCFModel.edmx</DependentUpon>
+      <LastGenOutput>QLCHCFModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

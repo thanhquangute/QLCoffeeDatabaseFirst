@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8aa5caaf9d6340f89065280157c84608" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.BAN" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.CHITIETHDCC" Width="1.5" PointX="12.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.CHUCVU" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.CTHOADON" Width="1.5" PointX="10.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.CTODER" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.CUAHANG" Width="1.5" PointX="0.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.HOADON" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.HOPDONGCC" Width="1.5" PointX="10" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.KHACHHANG" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.LOAIKH" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.NGUYENLIEU" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.NHACUNGCAP" Width="1.5" PointX="7.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.NHANVIEN" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.ODER" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.SANPHAM" Width="1.5" PointX="3" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.sysdiagram" Width="1.5" PointX="5.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCP_BCCK1Model.VITRI" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__BAN__MaVT__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__CTODER__MaBan__07C12930" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__HOADON__MaBan__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__ODER__MaBan__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__CHITIETHD__MaHDC__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__CHITIETHDC__MaNL__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__NHANVIEN__MaCV__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__CTHOADON__MaHD__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__CTHOADON__MaSP__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__CTODER__MaOder__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__CTODER__MaSP__08B54D69" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__NHANVIEN__MaCH__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__HOADON__MaOder__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__HOPDONGCC__MaNCC__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__KHACHHANG__MaLoa__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__ODER__MaKH__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__NHANVIEN__MaNQL__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.FK__ODER__MaNV__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCP_BCCK1Model.PHACHE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
